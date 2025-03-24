@@ -5,6 +5,13 @@ using Realms;
 
 public class RealmDateTime : RealmObject
 {
+    public static RealmDateTime CreateNew(DateTime? dateTime = null) => new()
+    {
+        Id = ObjectId.GenerateNewId(),
+        DateTime = dateTime ?? DateTime.Now
+    };
+
+
     [PrimaryKey]
     public ObjectId Id { get; set; }
 
@@ -32,9 +39,5 @@ public class RealmDateTime : RealmObject
 
     public static implicit operator DateTime(RealmDateTime rdt) => rdt.DateTime;
 
-    public static explicit operator RealmDateTime(DateTime dt) => new()
-    {
-        Id = ObjectId.GenerateNewId(),
-        DateTime = dt
-    };
+    public static explicit operator RealmDateTime(DateTime dt) => CreateNew(dt);
 }

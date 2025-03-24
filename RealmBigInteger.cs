@@ -6,6 +6,13 @@ using Realms;
 
 public class RealmBigInteger : RealmObject
 {
+    public static RealmBigInteger CreateNew(BigInteger? bigInteger = null) => new()
+    {
+        Id = ObjectId.GenerateNewId(),
+        BigInteger = bigInteger ?? BigInteger.Zero
+    };
+
+
     [PrimaryKey]
     public ObjectId Id { get; set; }
 
@@ -30,9 +37,5 @@ public class RealmBigInteger : RealmObject
     }
 
     public static implicit operator BigInteger(RealmBigInteger rbi) => rbi.BigInteger;
-    public static explicit operator RealmBigInteger(BigInteger bi) => new()
-    {
-        Id = ObjectId.GenerateNewId(),
-        BigInteger = bi
-    };
+    public static explicit operator RealmBigInteger(BigInteger bi) => CreateNew(bi);
 }
