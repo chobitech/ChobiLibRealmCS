@@ -4,7 +4,6 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-
       <PackageId>ChobiLibRealmCS</PackageId>
       <Version>0.0.2</Version>
       <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -16,10 +15,11 @@
       <RepositoryUrl>https://github.com/chobitech/ChobiLibRealmCS</RepositoryUrl>
   </PropertyGroup>
 
-
-
   <ItemGroup>
     <None Include="README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Realm" Version="20.1.0" />
   </ItemGroup>
 
