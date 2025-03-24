@@ -16,7 +16,10 @@
       <RepositoryUrl>https://github.com/chobitech/ChobiLibRealmCS</RepositoryUrl>
   </PropertyGroup>
 
+
+
   <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\"/>
     <PackageReference Include="Realm" Version="20.1.0" />
   </ItemGroup>
 
