@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+      <PackageId>ChobiLibRealmCS</PackageId>
+      <Version>0.0.1</Version>
+      <PackageReadmeFile>README.md</PackageReadmeFile>
+      <Authors>chobitech</Authors>
+      <Company>chobitech</Company>
+      <Copyright>© 2025 chobitech. All rights reserved.</Copyright>
+      <Description>C# support library on Realm for chobitech use</Description>
+      <PackageLicenseExpression>MIT</PackageLicenseExpression>
+      <RepositoryUrl>https://github.com/chobitech/ChobiLibRealmCS</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Realm" Version="20.1.0" />
+  </ItemGroup>
+
+</Project>
