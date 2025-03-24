@@ -1,9 +1,8 @@
+namespace ChobiLibRealm;
+
 using System.Collections;
 using System.Reflection;
 using Realms;
-
-namespace ChobiLibRealm;
-
 
 public static class ChobiLibRealmSub
 {

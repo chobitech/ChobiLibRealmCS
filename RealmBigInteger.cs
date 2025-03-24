@@ -1,8 +1,8 @@
+namespace ChobiLibRealm;
+
 using System.Numerics;
 using MongoDB.Bson;
 using Realms;
-
-namespace ChobiLibRealm;
 
 public class RealmBigInteger : RealmObject
 {
