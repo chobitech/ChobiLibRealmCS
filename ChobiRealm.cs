@@ -119,7 +119,7 @@ public class ChobiRealm(string realmFilePath, ulong schemaVersion, IList<Type> s
 
 
 
-    public void Dispose()
+    public virtual void Dispose()
     {
         _realm?.Dispose();
         _realm = null;
